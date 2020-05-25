@@ -1,5 +1,3 @@
-import {Factory} from '../util';
-
 export enum LogSeverity {
   DEBUG = 'DEBUG',
   INFO = 'INFO',
@@ -54,7 +52,7 @@ export type LogChannelHandler<S extends LogSeverity = LogSeverity> = (
 
 export type LogChannelName = string;
 
-export type LogChannelFactory = Factory<LogChannelName, ILogChannel>;
+export type LogChannelFactory = (channel: LogChannelName) => ILogChannel;
 
 export type Logger = ILogChannel;
 

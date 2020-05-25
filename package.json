@@ -2,9 +2,13 @@
   "name": "@flumer/root",
   "version": "0.0.0",
   "description": "A lightweight, highly extendable logger for both client and server JS applications",
+  "author": {
+    "name": "Drew Kimberly"
+  },
   "repository": {
     "url": "https://github.com/Drew-Kimberly/flumer"
   },
+  "readme": "",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [

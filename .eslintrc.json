@@ -1,9 +1,9 @@
 {
   "extends": "./node_modules/gts/",
-  "ignorePatterns": ["build/"],
+  "ignorePatterns": ["packages/**/build/"],
   "overrides": [
     {
-      "files": ["src/**/*.spec.ts"],
+      "files": ["packages/**/*.spec.ts"],
       "env": {
         "jest": true
       },

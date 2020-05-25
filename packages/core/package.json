@@ -1,0 +1,28 @@
+{
+  "name": "@flumer/core",
+  "version": "0.0.0",
+  "description": "Core domain definitions for Flumer log platform",
+  "author": "Drew Kimberly",
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "clean": "rm -rf build",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drew-Kimberly/flumer.git"
+  },
+  "readme": "https://github.com/Drew-Kimberly/flumer/tree/master/packages/core/README.md",
+  "bugs": {
+    "url": "https://github.com/Drew-Kimberly/flumer/issues"
+  },
+  "homepage": "https://github.com/Drew-Kimberly/flumer/tree/master/packages/core"
+}

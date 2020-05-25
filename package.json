@@ -6,6 +6,7 @@
     "name": "Drew Kimberly"
   },
   "repository": {
+    "type": "git",
     "url": "https://github.com/Drew-Kimberly/flumer"
   },
   "readme": "",
@@ -14,14 +15,22 @@
   "files": [
     "build/src"
   ],
+  "engines": {
+    "node": ">=12"
+  },
   "license": "MIT",
   "keywords": [],
   "scripts": {
+    "postinstall": "lerna bootstrap --hoist",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "check": "gts check",
-    "clean": "gts clean",
-    "compile": "tsc",
+    "clean": "lerna run clean",
+    "clean:core": "lerna run clean --scope=@flumer/core",
+    "clean:logger": "lerna run clean --scope=@flumer/logger",
+    "compile": "lerna run compile",
+    "compile:core": "lerna run compile --scope=@flumer/core",
+    "compile:logger": "lerna run compile --scope=@flumer/logger",
     "fix": "gts fix"
   },
   "devDependencies": {
@@ -31,6 +40,7 @@
     "eslint-plugin-jest": "^23.13.1",
     "gts": "^2.0.2",
     "jest": "^26.0.1",
+    "lerna": "^3.22.0",
     "ts-jest": "^26.0.0",
     "typescript": "^3.8.3"
   }

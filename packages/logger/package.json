@@ -1,0 +1,30 @@
+{
+  "name": "@flumer/logger",
+  "version": "0.0.0",
+  "description": "A lightweight, highly extendable logger for both client and server JS applications",
+  "author": "Drew Kimberly",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "clean": "rm -rf build",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drew-Kimberly/flumer.git"
+  },
+  "readme": "https://github.com/Drew-Kimberly/flumer/tree/master/packages/logger/README.md",
+  "bugs": {
+    "url": "https://github.com/Drew-Kimberly/flumer/issues"
+  },
+  "homepage": "https://github.com/Drew-Kimberly/flumer/tree/master/packages/logger",
+  "dependencies": {
+    "@flumer/core": "0.0.0"
+  }
+}

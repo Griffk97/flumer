@@ -1,0 +1,37 @@
+{
+  "name": "@flumer/root",
+  "version": "0.0.0",
+  "description": "A lightweight, highly extendable logger for both client and server JS applications",
+  "author": {
+    "name": "Drew Kimberly"
+  },
+  "repository": {
+    "url": "https://github.com/Drew-Kimberly/flumer"
+  },
+  "readme": "",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "@types/node": "^13.11.1",
+    "coveralls": "^3.1.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "gts": "^2.0.2",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.8.3"
+  }
+}

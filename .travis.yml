@@ -28,9 +28,8 @@ jobs:
       name: "Unit Test"
 
     - stage: release
+      if: (branch = master) AND (type = push)
       deploy:
         provider: script
         skip_cleanup: true
         script: npx semantic-release
-        on:
-          branch: master

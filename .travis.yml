@@ -29,7 +29,12 @@ jobs:
 
     - stage: release
       if: (branch = master) AND (type = push)
+      before_script:
+        - npm run compile
+        - npx lerna-semantic-release pre
+      script: 'true'
+      after_success: npx lerna-semantic-release post
       deploy:
         provider: script
         skip_cleanup: true
-        script: npx semantic-release
+        script: npx lerna-semantic-release perform

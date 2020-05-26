@@ -12,9 +12,13 @@ notifications:
     - recipients:
         - andrew.e.kimberly@gmail.com
 
+before_install: npm i -g lerna
+install: npm i
+
 stages:
   - compile
   - test
+  - release
 
 jobs:
   include:

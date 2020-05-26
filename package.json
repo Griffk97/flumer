@@ -21,6 +21,7 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
+    "commit": "git-cz",
     "postinstall": "lerna bootstrap --hoist",
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -36,12 +37,19 @@
   "devDependencies": {
     "@types/jest": "^25.2.2",
     "@types/node": "^13.11.1",
+    "commitizen": "^4.1.2",
     "coveralls": "^3.1.0",
+    "cz-lerna-changelog": "^2.0.2",
     "eslint-plugin-jest": "^23.13.1",
     "gts": "^2.0.2",
     "jest": "^26.0.1",
     "lerna": "^3.22.0",
     "ts-jest": "^26.0.0",
     "typescript": "^3.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
